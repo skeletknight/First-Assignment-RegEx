@@ -29,8 +29,13 @@ public class Exercise3 {
      */
 
     public static boolean validateEmail(String email) {
-        // TODO
-        return false;
+            // Regular expression pattern for a valid email address
+            String emailPattern = "^[A-Za-z0-9+_.-]+@(.+)$";
+
+            // Check if the provided email matches the pattern
+            return email.matches(emailPattern);
+
+
     }
 
     /*
